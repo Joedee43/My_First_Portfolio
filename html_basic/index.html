@@ -3,16 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool First Webpage</title>
+    <title>My Cool Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f5f5f5;
             color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            padding: 1rem;
+        }
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        header a:hover {
+            background-color: #3498db;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            gap: 2rem;
+        }
+        article {
+            flex: 3;
+        }
+        aside {
+            flex: 1;
+            background-color: #e1e8ed;
+            padding: 1rem;
+            border-radius: 4px;
+            height: fit-content;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #3498db;
+        }
+        .logo-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .logo-container img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            max-width: 100%;
+        }
+        .logo-container img:hover {
+            transform: scale(1.05);
         }
         h1 {
             color: #2c3e50;
@@ -27,65 +89,46 @@
         h3 {
             color: #16a085;
         }
-        p {
-            margin-bottom: 15px;
-        }
-        .logo-container {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .logo-container img {
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .logo-container img:hover {
-            transform: scale(1.05);
-        }
-        .nav-links {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .nav-links a {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #1da1f2;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            transition: background-color 0.3s;
-        }
-        .nav-links a:hover {
-            background-color: #1991da;
-        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My First Webpage!</h1>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tweets.html">Tweets</a></li>
+        </ul>
+    </header>
     
-    <div class="nav-links">
-        <a href="tweets.html">Check out my favorite tweets →</a>
-    </div>
+    <main>
+        <article>
+            <h1>Welcome to My Website!</h1>
+            
+            <div class="logo-container">
+                <a href="https://www.alxafrica.com" target="_blank">
+                    <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" width="300">
+                </a>
+            </div>
+            
+            <h2>About This Page</h2>
+            <p>This is my personal website created using HTML and CSS. I'm excited to learn web development and create more amazing pages in the future.</p>
+            
+            <h2>Why I'm Learning Web Development</h2>
+            <p>Web development is a crucial skill in today's digital world. It combines creativity with technical skills.</p>
+            
+            <h3>What I've Learned So Far</h3>
+            <p>I've learned about HTML structure, basic tags, and how to create headings and paragraphs.</p>
+            
+            <h3>My Goals</h3>
+            <p>My short-term goal is to master the basics of front-end development.</p>
+        </article>
+        
+        <aside>
+            <p>placeholder to add comment thread later</p>
+        </aside>
+    </main>
     
-    <div class="logo-container">
-        <a href="https://www.alxafrica.com" target="_blank">
-            <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" width="300">
-        </a>
-    </div>
-    
-    <!-- Rest of your existing index.html content remains the same -->
-    <h2>About This Page</h2>
-    <p>This is my very first webpage created using HTML. I'm excited to learn web development and create more amazing pages in the future.</p>
-    
-    <h2>Why I'm Learning Web Development</h2>
-    <p>Web development is a crucial skill in today's digital world. It combines creativity with technical skills.</p>
-    
-    <h3>What I've Learned So Far</h3>
-    <p>I've learned about HTML structure, basic tags, and how to create headings and paragraphs.</p>
-    
-    <h3>My Goals</h3>
-    <p>My short-term goal is to master the basics of front-end development.</p>
-    
-    <p>This journey is just beginning, and I can't wait to see what I'll be able to create!</p>
+    <footer>
+        <p>Made by [yonatan] - <a href="https://github.com/Joedee43" target="_blank">here</a></p>
+    </footer>
 </body>
 </html>
